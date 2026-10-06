@@ -1,0 +1,87 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+
+    <style>
+      :root {
+        --bg: #fff8f5;
+        --heading: #8e7180;
+        --box-bg: #fde2e4;
+        --box-border: #cdb4db;
+        --content-bg: #d8f3dc;
+        --info-bg: #fff1c7;
+        --text: #6b5b67;
+        --muted: #75616b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 30px;
+        font-family: Arial, sans-serif;
+        background-color: var(--bg);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 12px;
+        color: var(--heading);
+      }
+
+      .label {
+        margin: 8px 0;
+        font-size: 14px;
+        color: var(--heading);
+      }
+
+      .box {
+        width: 280px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: var(--box-bg);
+        border: 8px solid var(--box-border);
+        border-radius: 25px;
+      }
+
+      .content {
+        padding: 30px;
+        background-color: var(--content-bg);
+        border-radius: 15px;
+        color: var(--text);
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .info {
+        display: inline-block;
+        padding: 12px 18px;
+        background-color: var(--info-bg);
+        border-radius: 12px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>🌷 CSS Box Model 🌷</h1>
+
+    <p class="label">Understanding the four parts of the Box Model</p>
+
+    <div class="box">
+      <p class="label">🎀 PADDING 🎀</p>
+
+      <div class="content">💗 CONTENT 💗</div>
+
+      <p class="label">🪻 BORDER 🪻</p>
+    </div>
+
+    <div class="info">🌸 Margin → Border → Padding → Content 🌸</div>
+  </body>
+</html>

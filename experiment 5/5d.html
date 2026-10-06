@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+
+    <style>
+      :root {
+        --bg: #fdf6f0;
+        --heading: #6d6875;
+        --box-bg: #ffd6e0;
+        --border: #b8c0ff;
+        --content-bg: #d8e2dc;
+        --text: #555;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 30px;
+        font-family: Arial, sans-serif;
+        background-color: var(--bg);
+        text-align: center;
+      }
+
+      h1 {
+        color: var(--heading);
+      }
+
+      .box {
+        width: 250px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: var(--box-bg);
+        border: 8px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 10px 20px rgba(109, 104, 117, 0.12);
+      }
+
+      .content {
+        padding: 25px;
+        background-color: var(--content-bg);
+        color: var(--text);
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      .info {
+        margin-top: 16px;
+        color: var(--heading);
+        font-size: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>🌸 CSS Box Model 🌸</h1>
+
+    <div class="box">
+      <div class="content">CONTENT</div>
+      <p class="info">Padding → Border → Margin</p>
+    </div>
+  </body>
+</html>

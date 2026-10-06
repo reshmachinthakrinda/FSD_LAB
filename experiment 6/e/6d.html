@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voter Eligibility</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #FAF8F5;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2{
+            color: #5F6F65;
+        }
+
+        button{
+            background-color: #F7EEDB;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        th{
+            background-color: #D8E3E7;
+            color: #374151;
+        }
+
+        td, th{
+            border: 1px solid #999;
+            padding: 10px 15px;
+        }
+    </style>
+
+    <script>
+        function checkVoter(){
+
+            let name = prompt("Enter Your Name:");
+            let age = prompt("Enter Your Age:");
+
+            let status;
+
+            if(age >= 18){
+                status = "Eligible to Vote";
+            }
+            else{
+                status = "Not Eligible to Vote";
+            }
+
+            document.getElementById("details").innerHTML =
+            "<tr><th>Name</th><th>Age</th><th>Voter Status</th></tr>" +
+            "<tr><td>" + name + "</td><td>" + age +
+            "</td><td>" + status + "</td></tr>";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h2>Voter Eligibility Checker</h2>
+
+<button onclick="checkVoter()">Check Eligibility</button>
+
+<table id="details"></table>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists in HTML</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fff8f2;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #8064a2;
+        }
+
+        .box {
+            background-color: #f0f7f4;
+            padding: 15px;
+            margin: 15px auto;
+            width: 70%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #c77d8a;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #6a8caf;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Types of HTML Lists</h1>
+
+    <!-- Ordered List -->
+    <div class="box">
+        <h2>1. Ordered List - Fruits</h2>
+
+        <ol>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Grapes</li>
+        </ol>
+    </div>
+
+    <!-- Unordered List -->
+    <div class="box">
+        <h2>2. Unordered List - Vegetables</h2>
+
+        <ul>
+            <li>Carrot</li>
+            <li>Potato</li>
+            <li>Tomato</li>
+            <li>Spinach</li>
+            <li>Brinjal</li>
+        </ul>
+    </div>
+
+    <!-- Nested List -->
+    <div class="box">
+        <h2>3. Nested List</h2>
+
+        <ul>
+            <li>Fruits
+                <ul>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                    <li>Orange</li>
+                </ul>
+            </li>
+
+            <li>Vegetables
+                <ul>
+                    <li>Carrot</li>
+                    <li>Potato</li>
+                    <li>Tomato</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ordered List inside Unordered List -->
+    <div class="box">
+        <h2>4. Ordered List Inside Unordered List</h2>
+
+        <ul>
+            <li>Fruits
+                <ol>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                    <li>Banana</li>
+                </ol>
+            </li>
+
+            <li>Vegetables
+                <ol>
+                    <li>Carrot</li>
+                    <li>Potato</li>
+                    <li>Tomato</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Definition List -->
+    <div class="box">
+        <h2>5. Definition List</h2>
+
+        <dl>
+            <dt>Apple</dt>
+            <dd>A sweet and nutritious fruit.</dd>
+
+            <dt>Carrot</dt>
+            <dd>A root vegetable rich in nutrients.</dd>
+
+            <dt>Mango</dt>
+            <dd>A sweet tropical fruit.</dd>
+
+            <dt>Potato</dt>
+            <dd>A commonly used root vegetable.</dd>
+        </dl>
+    </div>
+
+</body>
+</html>

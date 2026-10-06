@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinator Selectors</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #FAF8F5;
+        }
+
+        /* Descendant Selector */
+        div p{
+            color: #56735B;
+        }
+
+        /* Child Selector */
+        div > h2{
+            color: #7C8A9A;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3 + p{
+            background-color: #F7EEDB;
+            padding: 5px;
+        }
+
+        /* General Sibling Selector */
+        h4 ~ p{
+            color: #8B6F6F;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div>
+    <h2>Child Selector</h2>
+
+    <p>Descendant Selector Paragraph.</p>
+
+    <section>
+        <p>Another Descendant Paragraph.</p>
+    </section>
+</div>
+
+<h3>Adjacent Sibling Selector</h3>
+
+<p>This paragraph is immediately after h3.</p>
+
+<h4>General Sibling Selector</h4>
+
+<p>First sibling paragraph.</p>
+
+<p>Second sibling paragraph.</p>
+
+</body>
+</html>

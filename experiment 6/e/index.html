@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal and External JavaScript</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #FAF8F5;
+            text-align: center;
+            padding: 30px;
+        }
+
+        h2{
+            color: #5F6F65;
+        }
+
+        p{
+            color: #6B7280;
+        }
+
+        button{
+            background-color: #DDEFE3;
+            color: #4F6F52;
+            border: none;
+            padding: 10px 18px;
+            margin: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: #C9E4D1;
+        }
+    </style>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+
+    <!-- Internal JavaScript -->
+    <script>
+        function showInternal(){
+            alert("Hello! This message is displayed using Internal JavaScript.");
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Internal and External JavaScript</h2>
+
+    <p>Click the buttons below to see Internal and External JavaScript.</p>
+
+    <button onclick="showInternal()">
+        Internal JavaScript
+    </button>
+
+    <button onclick="showExternal()">
+        External JavaScript
+    </button>
+
+</body>
+</html>
